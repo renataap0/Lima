@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <from method="post" action="processar.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome"> Nome completo</label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="number" id="idade" name="email" required>
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="number" min="18" max="120">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+
+        </fieldset>
+        <br> <br>
+
+        <fieldset>
+            <legend>Termos</legend>
+            <label for="for =" Termos> 
+            <input type="checkbox" id="termos" name="termos" required>
+            Aceito termos de serviço
+        </label>
+        </fieldset>
+
+        <br><br>
+        
+        <button type="submit">cadastrar</button>
+        <button type="reset">Limpar</button>
+    </from>
+</body>
+</html>

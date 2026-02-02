@@ -85,7 +85,62 @@
                     <th><img src="palmeiras.jpg" alt="Escudo do Palmeiras" width="30"></th>
                     <th>3</th>
                     <th>1</th>
-                </tr>
+                </tr> 
+                <br><br> 
         </tbody>
+    </table>
+
+        <h2>Contato</h2>
+        <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+        <p>Email: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+
+<form method="post" action="processar.php">
+    <fieldset>
+        <legend>Dados do Seu Time</legend>
+
+        <label for="nome_time">Nome do Time:</label>
+        <input type="text" id="nome_time" name="nome_time" required>
+        <br><br>
+
+        <label for="titulos_br">Títulos Brasileiros:</label>
+        <input type="number" id="titulos_br" name="titulos_br" min="0" max="15" required>
+        <br><br>
+
+        <label for="mundial">Tem Mundial:</label>
+        <input type="checkbox" id="mundial" name="mundial"> Sim
+        <br><br>
+
+        <label for="torcida">Torcida (milhões):</label>
+        <input type="number" id="torcida" name="torcida" min="0" max="100">
+        <br><br>
+
+        <label for="comentario">Deixe seu comentário:</label>
+        <input type="text" id="comentario" name="comentario" required>
+        <br><br>
+    </fieldset>
+</form>
+
+    <br><br>
+
+    <fieldset>
+    <legend>Emoções</legend>
+    <input type="checkbox" name="feliz"> Sou feliz
+    <input type="checkbox" name="sou_feliz"> Não sou feliz
+    <input type="checkbox" name="nao_feliz"> Sou muito alegre
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+    <legend>Pagamento</legend>
+    <input type="checkbox" name="credito"> Cartão Crédito
+    <input type="checkbox" name="debito"> Cartão Débito
+    <input type="checkbox" name="pix"> Pix
+    <input type="checkbox" name="vale_bombom"> Vale Bombom
+    </fieldset>
+
+    <br><br>
+        
+        <button type="submit">Enviar</button>
 </body>
 </html>
